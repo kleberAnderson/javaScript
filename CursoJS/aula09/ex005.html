@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="id">Clique em mim</div>
+    <div class="c">ou aqui</div>
+    <div class="grupo">aqui</div>
+    
+    <Script>
+        var corpo = window.document.body
+
+        //selecioando pela Marca/Tags
+        //usamos o <[1]> por ter mais de uma tag p.
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.background = 'green'
+
+        //selecionado pelo id
+        var id = window.document.getElementById('id')
+        id.style.background = 'blue'
+        id.innerText = 'Estou aguardando'
+        
+        //selecionando por classe
+        var c = window.document.getElementsByClassName('c')[0]
+        c.style.background = 'green'
+
+        //nova forma de selecao ( . ) class e ( # ) id
+        var d = window.document.querySelector('div.grupo')
+        d.style.background = 'blue'
+    </Script>
+</body>
+</html>

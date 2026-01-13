@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial; /*mudando o formato das letras a serem exibidass*/
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual o seu nome?")
+        document.write("Olá, " + nome + "! Seu nome tem " + nome.length + " letras.<br/>")
+        document.writeln("Seu nome em maiúsculas é " + nome.toUpperCase() +"<br/>") //transformar o nome todo em maiúscula
+        document.write("Seu nome em minúsculas é " + nome.toLowerCase()) //transformar o nome todo em minúscula, <br/> é quebra de linha dentro do texto
+        
+
+    </script>
+</body>
+</html>
